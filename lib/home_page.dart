@@ -17,6 +17,8 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Text('Hello World'),
+          Image.network(
+              'https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg'),
           Text('Hello World'),
           TextField(),
           ElevatedButton(
