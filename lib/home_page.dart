@@ -14,18 +14,26 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.cyan[800],
         title: Text('First App', style: TextStyle(color: Colors.white)),
       ),
-      body: Column(
+      body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
         children: [
-          Text('Hello World'),
+          Text('This the Home Page of the App'),
+          Container(height: 30),
           Image.network(
               'https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_1280.jpg'),
-          Text('Hello World'),
-          TextField(),
+          Container(height: 30),
+          TextField(
+            decoration: InputDecoration(
+              hintText: 'Enter your name',
+              border: OutlineInputBorder(),
+            ),
+          ),
+          Container(height: 30),
           ElevatedButton(
               onPressed: () {
                 print('Button Pressed');
               },
-              child: Text('Submit'))
+              child: Text('Click Me'))
         ],
       ),
       drawer: Drawer(
