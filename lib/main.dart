@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 void main(){
   runApp(MaterialApp(
     title: 'first App',
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text('This is not working'),
-      ),
-      body: Center(
-        child: Text('Hello World'),
-      ),
-    ),
+    home: HomePage(),
   ));
 }
